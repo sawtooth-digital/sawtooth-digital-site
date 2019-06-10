@@ -1,0 +1,59 @@
+/* .page-enter-active,
+.page-leave-active {
+  transition: opacity .5s
+}
+
+
+
+.page-enter,
+.page-enter-active {
+  animation: acrossIn .7s ease both;
+}
+.page-leave,
+.page-leave-active {
+  animation: fadeOut .2s ease both;
+} */
+.bounce-enter,
+.bounce-enter-active {
+  animation: moveFromBottom 1.3s;
+}
+
+.bounce-page-leave,
+.bounce-leave-active {
+  animation: moveFromTop 1.3s;
+}
+
+@keyframes moveFromTop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveFromBottom {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* @keyframes bounce-in {
+  0% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(0)
+  }
+} */
